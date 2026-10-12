@@ -1,0 +1,1346 @@
+{
+  "schema": 1,
+  "updated": "2026-10",
+  "disclaimer": "本库用于 UI 选择与配方路由。settings 键、intent、属性名均为『候选项』，运行时必须先探测存在再写入，写后读回校验；未命中一律回退到系统官方入口手动开启。",
+  "platforms": [
+    {
+      "id": "sd8e",
+      "name": "骁龙 8 Elite",
+      "vendor": "QTI",
+      "boards": [
+        "sun",
+        "sm8750"
+      ],
+      "note": "2024 末—2026 旗舰主力，Adreno 750 系"
+    },
+    {
+      "id": "sd8g3",
+      "name": "骁龙 8 Gen 3",
+      "vendor": "QTI",
+      "boards": [
+        "kalama",
+        "sm8650"
+      ],
+      "note": "2024 旗舰主力"
+    },
+    {
+      "id": "sd8g2",
+      "name": "骁龙 8 Gen 2",
+      "vendor": "QTI",
+      "boards": [
+        "kalama",
+        "sm8550"
+      ],
+      "note": "2023 旗舰，存量极大"
+    },
+    {
+      "id": "sd8sg3",
+      "name": "骁龙 8s Gen 3",
+      "vendor": "QTI",
+      "boards": [
+        "sm8635"
+      ],
+      "note": "次旗舰，调度策略接近 8G3"
+    },
+    {
+      "id": "sd7pg4",
+      "name": "骁龙 7+ Gen 4 / Gen 3",
+      "vendor": "QTI",
+      "boards": [
+        "sm7675",
+        "sm7670"
+      ],
+      "note": "中高端，温控保守"
+    },
+    {
+      "id": "d9400",
+      "name": "天玑 9400",
+      "vendor": "MTK",
+      "boards": [
+        "mt6991"
+      ],
+      "note": "MTK 2024 末旗舰，perfmgr/FPSGO 路径存在但权限收紧"
+    },
+    {
+      "id": "d9300",
+      "name": "天玑 9300",
+      "vendor": "MTK",
+      "boards": [
+        "mt6989"
+      ],
+      "note": "MTK 2023 末旗舰"
+    },
+    {
+      "id": "d9200",
+      "name": "天玑 9200 / 9200+",
+      "vendor": "MTK",
+      "boards": [
+        "mt6985",
+        "mt6983"
+      ],
+      "note": "MTK 2022 末旗舰"
+    },
+    {
+      "id": "d8400",
+      "name": "天玑 8400",
+      "vendor": "MTK",
+      "boards": [
+        "mt6899",
+        "mt6898"
+      ],
+      "note": "MTK 中高端新架构"
+    },
+    {
+      "id": "d8300",
+      "name": "天玑 8300",
+      "vendor": "MTK",
+      "boards": [
+        "mt6897"
+      ],
+      "note": "MTK 中高端"
+    },
+    {
+      "id": "d8200",
+      "name": "天玑 8200",
+      "vendor": "MTK",
+      "boards": [
+        "mt6896"
+      ],
+      "note": "MTK 中端"
+    },
+    {
+      "id": "sd8g1",
+      "name": "骁龙 8 Gen 1 / 8+ Gen 1",
+      "vendor": "QTI",
+      "boards": [
+        "taro",
+        "sm8450",
+        "sm8475"
+      ],
+      "note": "2022 旗舰，8+ 为台积电版，发热与调度策略差异大"
+    },
+    {
+      "id": "sd888",
+      "name": "骁龙 888 / 888+",
+      "vendor": "QTI",
+      "boards": [
+        "lahaina",
+        "sm8350"
+      ],
+      "note": "2021 旗舰，存量巨大，发热偏高"
+    },
+    {
+      "id": "sd870",
+      "name": "骁龙 870 / 865(+)",
+      "vendor": "QTI",
+      "boards": [
+        "kona",
+        "sm8250",
+        "8250"
+      ],
+      "note": "2020—2022 高性价比旗舰，Kona 内核，调度节点完整易写"
+    },
+    {
+      "id": "sd865",
+      "name": "骁龙 865 / 865+",
+      "vendor": "QTI",
+      "boards": [
+        "kona",
+        "sm8250",
+        "8250"
+      ],
+      "note": "与 870 同为 Kona，频率档位略低"
+    },
+    {
+      "id": "sd855",
+      "name": "骁龙 855 / 855+",
+      "vendor": "QTI",
+      "boards": [
+        "msmnile",
+        "sm8150"
+      ],
+      "note": "2019 旗舰"
+    },
+    {
+      "id": "sd778",
+      "name": "骁龙 778G / 780G / 782G",
+      "vendor": "QTI",
+      "boards": [
+        "lito",
+        "sm7325",
+        "sm7350"
+      ],
+      "note": "中端主力，温控保守"
+    },
+    {
+      "id": "sd7g3",
+      "name": "骁龙 7 Gen 3 / 7s Gen 2",
+      "vendor": "QTI",
+      "boards": [
+        "sm7550",
+        "sm7435"
+      ],
+      "note": "中端新架构"
+    },
+    {
+      "id": "sd6g1",
+      "name": "骁龙 6 Gen 1 / 695 / 690",
+      "vendor": "QTI",
+      "boards": [
+        "holi",
+        "sm6375"
+      ],
+      "note": "入门 5G，可调节点少"
+    },
+    {
+      "id": "d1200",
+      "name": "天玑 1200 / 1100",
+      "vendor": "MTK",
+      "boards": [
+        "mt6893",
+        "mt6891"
+      ],
+      "note": "MTK 2021 旗舰，PPM 节点完整"
+    },
+    {
+      "id": "d1000",
+      "name": "天玑 1000 / 1000+",
+      "vendor": "MTK",
+      "boards": [
+        "mt6889",
+        "mt6885"
+      ],
+      "note": "MTK 2020 旗舰"
+    },
+    {
+      "id": "d900",
+      "name": "天玑 900 / 920 / 820",
+      "vendor": "MTK",
+      "boards": [
+        "mt6877",
+        "mt6878",
+        "mt6875"
+      ],
+      "note": "MTK 中端"
+    },
+    {
+      "id": "d8000",
+      "name": "天玑 8000 / 8100",
+      "vendor": "MTK",
+      "boards": [
+        "mt6895",
+        "mt6895z",
+        "mt8795"
+      ],
+      "note": "MTK 2022 中高端，能效优秀"
+    },
+    {
+      "id": "exynos",
+      "name": "三星 Exynos（含猎户座）",
+      "vendor": "OTHER",
+      "boards": [
+        "exynos",
+        "s5e",
+        "exynos2"
+      ],
+      "note": "节点与 QTI/MTK 均不同，兜底探测为主"
+    },
+    {
+      "id": "kirin",
+      "name": "海思麒麟（老机型）",
+      "vendor": "OTHER",
+      "boards": [
+        "kirin",
+        "hi3",
+        "hisilicon"
+      ],
+      "note": "华为老机型，可调节点极少，仅安全档可用"
+    },
+    {
+      "id": "generic",
+      "name": "未识别 / 其他平台",
+      "vendor": "OTHER",
+      "boards": [],
+      "note": "按实机探测结果走通用配方，不猜命令"
+    }
+  ],
+  "brands": [
+    {
+      "id": "xiaomi",
+      "name": "小米 / Redmi / POCO"
+    },
+    {
+      "id": "oppo",
+      "name": "OPPO / 一加"
+    },
+    {
+      "id": "realme",
+      "name": "realme"
+    },
+    {
+      "id": "vivo",
+      "name": "vivo / iQOO"
+    },
+    {
+      "id": "honor",
+      "name": "荣耀"
+    },
+    {
+      "id": "samsung",
+      "name": "三星（骁龙版）"
+    },
+    {
+      "id": "other",
+      "name": "其他 / 红魔 / ROG"
+    }
+  ],
+  "brandRecipes": {
+    "xiaomi": {
+      "entry": "设置 > 省电与电池 > 性能模式（或 游戏加速 / 狂暴模式）",
+      "candidates": [
+        {
+          "ns": "system",
+          "keys": [
+            "POWER_PERFORMANCE_MODE_OPEN",
+            "POWER_BALANCED_MODE_OPEN",
+            "speed_mode"
+          ],
+          "on": "1",
+          "off": "0"
+        },
+        {
+          "ns": "global",
+          "keys": [
+            "power_performance_mode",
+            "force_high_performance"
+          ],
+          "on": "1",
+          "off": "0"
+        }
+      ],
+      "notes": "HyperOS/MIUI 版本差异大。settings 键为社区候选，必须先 settings list 探测；未命中就引导用户到系统入口，不要盲目直写。"
+    },
+    "oppo": {
+      "entry": "设置 > 电池 > 更多 > 高性能模式（一加官方入口）",
+      "candidates": [
+        {
+          "ns": "system",
+          "keys": [
+            "high_performance_mode",
+            "perf_mode",
+            "game_mode_performance"
+          ],
+          "on": "1",
+          "off": "0"
+        },
+        {
+          "ns": "global",
+          "keys": [
+            "oplus_high_performance",
+            "high_performance_mode_enable"
+          ],
+          "on": "1",
+          "off": "0"
+        }
+      ],
+      "notes": "ColorOS 需关闭『权限监控』才能完整使用 ADB 能力（该开关由用户在系统里操作，应用无法代劳）。"
+    },
+    "realme": {
+      "entry": "设置 > 电池 > 高性能模式（realme UI 与 ColorOS 同源）",
+      "candidates": [
+        {
+          "ns": "system",
+          "keys": [
+            "high_performance_mode",
+            "perf_mode"
+          ],
+          "on": "1",
+          "off": "0"
+        },
+        {
+          "ns": "global",
+          "keys": [
+            "realme_high_performance"
+          ],
+          "on": "1",
+          "off": "0"
+        }
+      ],
+      "notes": "与 ColorOS 共用候选键，先探测后写入。"
+    },
+    "vivo": {
+      "entry": "设置 > 电池 > 省电与性能 > Monster / 性能模式（游戏魔盒内也有开关）",
+      "candidates": [
+        {
+          "ns": "system",
+          "keys": [
+            "vivo_performance_mode",
+            "monster_mode",
+            "performance_mode"
+          ],
+          "on": "1",
+          "off": "0"
+        },
+        {
+          "ns": "global",
+          "keys": [
+            "vivo_game_mode",
+            "high_performance_mode"
+          ],
+          "on": "1",
+          "off": "0"
+        }
+      ],
+      "notes": "OriginOS/Funtouch 底层键未公开。禁止冻结 i 管家或游戏组件，会破坏通知与网络加速。"
+    },
+    "honor": {
+      "entry": "设置 > 电池（或 系统管家 > 电池）> 性能模式，开启后状态栏出现图标",
+      "candidates": [
+        {
+          "ns": "system",
+          "keys": [
+            "performance_mode",
+            "power_mode_performance"
+          ],
+          "on": "1",
+          "off": "0"
+        },
+        {
+          "ns": "global",
+          "keys": [
+            "honor_performance_mode"
+          ],
+          "on": "1",
+          "off": "0"
+        }
+      ],
+      "notes": "官方入口已确认存在；没有可写的公开系统键，探测不到就回退手动入口。"
+    },
+    "samsung": {
+      "entry": "Game Booster > 性能档位（性能 / 标准 / 省电）",
+      "candidates": [
+        {
+          "ns": "system",
+          "keys": [
+            "game_performance_mode",
+            "sem_performance_mode"
+          ],
+          "on": "1",
+          "off": "0"
+        },
+        {
+          "ns": "global",
+          "keys": [
+            "game_booster_performance"
+          ],
+          "on": "1",
+          "off": "0"
+        }
+      ],
+      "notes": "Game Booster 档位是官方能力；全局性能属性未确认，建议只对前台游戏生效。"
+    },
+    "other": {
+      "entry": "系统设置 > 电池 / 性能相关入口",
+      "candidates": [
+        {
+          "ns": "system",
+          "keys": [
+            "performance_mode",
+            "high_performance_mode"
+          ],
+          "on": "1",
+          "off": "0"
+        },
+        {
+          "ns": "global",
+          "keys": [
+            "performance_mode"
+          ],
+          "on": "1",
+          "off": "0"
+        }
+      ],
+      "notes": "未收录品牌：只做只读监控 + 通用候选键探测 + 通用 sysfs 配方（root）。"
+    }
+  },
+  "devices": [
+    {
+      "id": "mi15",
+      "brand": "xiaomi",
+      "name": "小米 15",
+      "platform": "sd8e",
+      "alias": [
+        "Xiaomi 15",
+        "MI 15"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "mi15pro",
+      "brand": "xiaomi",
+      "name": "小米 15 Pro",
+      "platform": "sd8e",
+      "alias": [
+        "Xiaomi 15 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "mi14",
+      "brand": "xiaomi",
+      "name": "小米 14",
+      "platform": "sd8g3",
+      "alias": [
+        "Xiaomi 14"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "mi14pro",
+      "brand": "xiaomi",
+      "name": "小米 14 Pro",
+      "platform": "sd8g3",
+      "alias": [
+        "Xiaomi 14 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "mi14ultra",
+      "brand": "xiaomi",
+      "name": "小米 14 Ultra",
+      "platform": "sd8g3",
+      "alias": [
+        "Xiaomi 14 Ultra"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k80",
+      "brand": "xiaomi",
+      "name": "Redmi K80",
+      "platform": "sd8g3",
+      "alias": [
+        "Redmi K80"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k80pro",
+      "brand": "xiaomi",
+      "name": "Redmi K80 Pro",
+      "platform": "sd8e",
+      "alias": [
+        "Redmi K80 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k70",
+      "brand": "xiaomi",
+      "name": "Redmi K70",
+      "platform": "sd8g2",
+      "alias": [
+        "Redmi K70"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k70pro",
+      "brand": "xiaomi",
+      "name": "Redmi K70 Pro",
+      "platform": "sd8g3",
+      "alias": [
+        "Redmi K70 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "turbo4",
+      "brand": "xiaomi",
+      "name": "Redmi Turbo 4",
+      "platform": "d8400",
+      "alias": [
+        "Redmi Turbo 4"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "pocof7pro",
+      "brand": "xiaomi",
+      "name": "POCO F7 Pro",
+      "platform": "sd8g3",
+      "alias": [
+        "POCO F7 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "findx8",
+      "brand": "oppo",
+      "name": "OPPO Find X8",
+      "platform": "d9400",
+      "alias": [
+        "OPPO Find X8",
+        "Find X8"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "findx8pro",
+      "brand": "oppo",
+      "name": "OPPO Find X8 Pro",
+      "platform": "d9400",
+      "alias": [
+        "OPPO Find X8 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "findx7",
+      "brand": "oppo",
+      "name": "OPPO Find X7",
+      "platform": "d9300",
+      "alias": [
+        "OPPO Find X7"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "findx7ultra",
+      "brand": "oppo",
+      "name": "OPPO Find X7 Ultra",
+      "platform": "sd8g3",
+      "alias": [
+        "OPPO Find X7 Ultra"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "oneplus13",
+      "brand": "oppo",
+      "name": "一加 13",
+      "platform": "sd8e",
+      "alias": [
+        "OnePlus 13",
+        "一加 13"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "oneplus12",
+      "brand": "oppo",
+      "name": "一加 12",
+      "platform": "sd8g3",
+      "alias": [
+        "OnePlus 12"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ace5",
+      "brand": "oppo",
+      "name": "一加 Ace 5",
+      "platform": "sd8g3",
+      "alias": [
+        "OnePlus Ace 5"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ace3",
+      "brand": "oppo",
+      "name": "一加 Ace 3",
+      "platform": "sd8g2",
+      "alias": [
+        "OnePlus Ace 3"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "gt7pro",
+      "brand": "realme",
+      "name": "realme GT7 Pro",
+      "platform": "sd8e",
+      "alias": [
+        "realme GT7 Pro",
+        "GT7 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "gt6",
+      "brand": "realme",
+      "name": "realme GT6",
+      "platform": "sd8g3",
+      "alias": [
+        "realme GT6"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "gt5pro",
+      "brand": "realme",
+      "name": "realme GT5 Pro",
+      "platform": "sd8g3",
+      "alias": [
+        "realme GT5 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "gtneo6",
+      "brand": "realme",
+      "name": "realme GT Neo6",
+      "platform": "sd8g3",
+      "alias": [
+        "realme GT Neo6"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "x200",
+      "brand": "vivo",
+      "name": "vivo X200",
+      "platform": "d9400",
+      "alias": [
+        "vivo X200"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "x200pro",
+      "brand": "vivo",
+      "name": "vivo X200 Pro",
+      "platform": "d9400",
+      "alias": [
+        "vivo X200 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "x100",
+      "brand": "vivo",
+      "name": "vivo X100",
+      "platform": "d9300",
+      "alias": [
+        "vivo X100"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "x100pro",
+      "brand": "vivo",
+      "name": "vivo X100 Pro",
+      "platform": "d9300",
+      "alias": [
+        "vivo X100 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "x100ultra",
+      "brand": "vivo",
+      "name": "vivo X100 Ultra",
+      "platform": "sd8g3",
+      "alias": [
+        "vivo X100 Ultra"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "iqoo13",
+      "brand": "vivo",
+      "name": "iQOO 13",
+      "platform": "sd8e",
+      "alias": [
+        "iQOO 13"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "iqoo12",
+      "brand": "vivo",
+      "name": "iQOO 12",
+      "platform": "sd8g3",
+      "alias": [
+        "iQOO 12"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "neo10",
+      "brand": "vivo",
+      "name": "iQOO Neo10",
+      "platform": "sd8g3",
+      "alias": [
+        "iQOO Neo10"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "z9turbo",
+      "brand": "vivo",
+      "name": "iQOO Z9 Turbo",
+      "platform": "sd8sg3",
+      "alias": [
+        "iQOO Z9 Turbo"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "magic7",
+      "brand": "honor",
+      "name": "荣耀 Magic7",
+      "platform": "sd8e",
+      "alias": [
+        "Honor Magic7",
+        "荣耀 Magic7"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "magic7pro",
+      "brand": "honor",
+      "name": "荣耀 Magic7 Pro",
+      "platform": "sd8e",
+      "alias": [
+        "Honor Magic7 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "magic6",
+      "brand": "honor",
+      "name": "荣耀 Magic6",
+      "platform": "sd8g3",
+      "alias": [
+        "Honor Magic6"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "magic6pro",
+      "brand": "honor",
+      "name": "荣耀 Magic6 Pro",
+      "platform": "sd8g3",
+      "alias": [
+        "Honor Magic6 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "honor300pro",
+      "brand": "honor",
+      "name": "荣耀 300 Pro",
+      "platform": "sd8g3",
+      "alias": [
+        "Honor 300 Pro"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "honorgt",
+      "brand": "honor",
+      "name": "荣耀 GT",
+      "platform": "sd8g3",
+      "alias": [
+        "Honor GT"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "s25",
+      "brand": "samsung",
+      "name": "三星 Galaxy S25",
+      "platform": "sd8e",
+      "alias": [
+        "Galaxy S25",
+        "SM-S931"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "s25plus",
+      "brand": "samsung",
+      "name": "三星 Galaxy S25+",
+      "platform": "sd8e",
+      "alias": [
+        "Galaxy S25+"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "s24",
+      "brand": "samsung",
+      "name": "三星 Galaxy S24",
+      "platform": "sd8g3",
+      "alias": [
+        "Galaxy S24"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "redmagic10pro",
+      "brand": "other",
+      "name": "红魔 10 Pro",
+      "platform": "sd8e",
+      "alias": [
+        "RedMagic 10 Pro",
+        "nubia"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rog9",
+      "brand": "other",
+      "name": "ROG Phone 9",
+      "platform": "sd8e",
+      "alias": [
+        "ROG Phone 9",
+        "ASUS"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "generic",
+      "brand": "other",
+      "name": "通用 / 未收录机型",
+      "platform": "sd8g3",
+      "alias": [],
+      "confidence": "low",
+      "note": "按探测结果自动选择 QTI 或 MTK 通用配方"
+    },
+    {
+      "id": "iqooneo5",
+      "brand": "vivo",
+      "name": "iQOO Neo5",
+      "platform": "sd870",
+      "alias": [
+        "iQOO Neo5",
+        "V2055A",
+        "PD2055",
+        "PD2172",
+        "V2055"
+      ],
+      "confidence": "high",
+      "note": "Kona/SM8250-AC，OriginOS 4 上 cpufreq 节点完整，root 后三档全可用"
+    },
+    {
+      "id": "iqooneo5s",
+      "brand": "vivo",
+      "name": "iQOO Neo5S",
+      "platform": "sd888",
+      "alias": [
+        "iQOO Neo5S",
+        "V2118A",
+        "PD2118"
+      ],
+      "confidence": "high",
+      "note": "骁龙 888"
+    },
+    {
+      "id": "iqooneo5se",
+      "brand": "vivo",
+      "name": "iQOO Neo5 SE",
+      "platform": "sd870",
+      "alias": [
+        "iQOO Neo5 SE",
+        "V2057A",
+        "PD2057"
+      ],
+      "confidence": "high",
+      "note": "骁龙 870"
+    },
+    {
+      "id": "iqooneo6",
+      "brand": "vivo",
+      "name": "iQOO Neo6",
+      "platform": "sd8g1",
+      "alias": [
+        "iQOO Neo6",
+        "V2199A",
+        "PD2199"
+      ],
+      "confidence": "high",
+      "note": "骁龙 8 Gen 1"
+    },
+    {
+      "id": "iqooneo6se",
+      "brand": "vivo",
+      "name": "iQOO Neo6 SE",
+      "platform": "sd870",
+      "alias": [
+        "iQOO Neo6 SE",
+        "V2148A"
+      ],
+      "confidence": "high",
+      "note": "骁龙 870"
+    },
+    {
+      "id": "iqoo7",
+      "brand": "vivo",
+      "name": "iQOO 7",
+      "platform": "sd888",
+      "alias": [
+        "iQOO 7",
+        "V2049A",
+        "PD2049"
+      ],
+      "confidence": "high",
+      "note": "骁龙 888，Monster 模式相关设置键存在"
+    },
+    {
+      "id": "iqoo5",
+      "brand": "vivo",
+      "name": "iQOO 5 / 5 Pro",
+      "platform": "sd865",
+      "alias": [
+        "iQOO 5",
+        "iQOO 5 Pro",
+        "V2024A"
+      ],
+      "confidence": "medium",
+      "note": "骁龙 865"
+    },
+    {
+      "id": "iqooneo3",
+      "brand": "vivo",
+      "name": "iQOO Neo3",
+      "platform": "sd865",
+      "alias": [
+        "iQOO Neo3",
+        "V1981A",
+        "PD1981"
+      ],
+      "confidence": "high",
+      "note": "骁龙 865"
+    },
+    {
+      "id": "vivox60p",
+      "brand": "vivo",
+      "name": "vivo X60 Pro（国际版 870）",
+      "platform": "sd870",
+      "alias": [
+        "vivo X60 Pro",
+        "V2047A"
+      ],
+      "confidence": "medium",
+      "note": "国际版为 SM8250-AC，国行版是 Exynos 1080"
+    },
+    {
+      "id": "mi10s",
+      "brand": "xiaomi",
+      "name": "小米 10S",
+      "platform": "sd870",
+      "alias": [
+        "Xiaomi 10S",
+        "Mi 10S",
+        "M2102J2SC"
+      ],
+      "confidence": "high",
+      "note": "骁龙 870"
+    },
+    {
+      "id": "mi10",
+      "brand": "xiaomi",
+      "name": "小米 10 / 10 Pro",
+      "platform": "sd865",
+      "alias": [
+        "Xiaomi 10",
+        "Mi 10",
+        "Mi 10 Pro",
+        "umi",
+        "cmi"
+      ],
+      "confidence": "high",
+      "note": "骁龙 865"
+    },
+    {
+      "id": "mi10u",
+      "brand": "xiaomi",
+      "name": "小米 10 至尊纪念版",
+      "platform": "sd865",
+      "alias": [
+        "Mi 10 Ultra",
+        "cas"
+      ],
+      "confidence": "high",
+      "note": "骁龙 865"
+    },
+    {
+      "id": "redmik40",
+      "brand": "xiaomi",
+      "name": "Redmi K40 / K40 Pro",
+      "platform": "sd870",
+      "alias": [
+        "Redmi K40",
+        "K40",
+        "alioth",
+        "M2012K11AC"
+      ],
+      "confidence": "high",
+      "note": "K40 为骁龙 870（alioth）；K40 Pro 为 888（haydn）"
+    },
+    {
+      "id": "redmik30s",
+      "brand": "xiaomi",
+      "name": "Redmi K30S 至尊纪念版",
+      "platform": "sd865",
+      "alias": [
+        "Redmi K30S",
+        "apollo"
+      ],
+      "confidence": "high",
+      "note": "骁龙 865"
+    },
+    {
+      "id": "pocof3",
+      "brand": "xiaomi",
+      "name": "POCO F3",
+      "platform": "sd870",
+      "alias": [
+        "POCO F3",
+        "alioth"
+      ],
+      "confidence": "high",
+      "note": "与 K40 同硬件"
+    },
+    {
+      "id": "mi11",
+      "brand": "xiaomi",
+      "name": "小米 11 / 11 Pro / 11 Ultra",
+      "platform": "sd888",
+      "alias": [
+        "Xiaomi 11",
+        "Mi 11",
+        "venus",
+        "mars",
+        "star"
+      ],
+      "confidence": "high",
+      "note": "骁龙 888"
+    },
+    {
+      "id": "mi11x",
+      "brand": "xiaomi",
+      "name": "小米 11X / Redmi K40 Pro+",
+      "platform": "sd888",
+      "alias": [
+        "Mi 11X",
+        "haydn",
+        "K40 Pro+"
+      ],
+      "confidence": "medium",
+      "note": "骁龙 888"
+    },
+    {
+      "id": "oneplus9",
+      "brand": "oppo",
+      "name": "一加 9 / 9 Pro",
+      "platform": "sd888",
+      "alias": [
+        "OnePlus 9",
+        "OnePlus9",
+        "lemonade"
+      ],
+      "confidence": "high",
+      "note": "骁龙 888"
+    },
+    {
+      "id": "oneplus8",
+      "brand": "oppo",
+      "name": "一加 8 / 8 Pro / 8T",
+      "platform": "sd865",
+      "alias": [
+        "OnePlus 8",
+        "OnePlus8",
+        "instantnoodle"
+      ],
+      "confidence": "high",
+      "note": "骁龙 865"
+    },
+    {
+      "id": "oneplus9r",
+      "brand": "oppo",
+      "name": "一加 9R",
+      "platform": "sd870",
+      "alias": [
+        "OnePlus 9R",
+        "OnePlus9R"
+      ],
+      "confidence": "high",
+      "note": "骁龙 870"
+    },
+    {
+      "id": "findx3",
+      "brand": "oppo",
+      "name": "OPPO Find X3 / X3 Pro",
+      "platform": "sd870",
+      "alias": [
+        "OPPO Find X3",
+        "Find X3",
+        "OP4A7A"
+      ],
+      "confidence": "medium",
+      "note": "Find X3 为 870，Pro 为 888"
+    },
+    {
+      "id": "realmegt",
+      "brand": "realme",
+      "name": "realme GT / GT Neo2",
+      "platform": "sd870",
+      "alias": [
+        "realme GT",
+        "RMX2202",
+        "GT Neo2"
+      ],
+      "confidence": "high",
+      "note": "骁龙 870"
+    },
+    {
+      "id": "realmegt2",
+      "brand": "realme",
+      "name": "realme GT2 / GT Neo3",
+      "platform": "sd8g1",
+      "alias": [
+        "realme GT2",
+        "RMX3312",
+        "GT Neo3"
+      ],
+      "confidence": "medium",
+      "note": "骁龙 8 Gen 1"
+    },
+    {
+      "id": "mi12",
+      "brand": "xiaomi",
+      "name": "小米 12 / 12 Pro",
+      "platform": "sd8g1",
+      "alias": [
+        "Xiaomi 12",
+        "Mi 12",
+        "cupid",
+        "zeus"
+      ],
+      "confidence": "high",
+      "note": "骁龙 8 Gen 1"
+    },
+    {
+      "id": "mi12s",
+      "brand": "xiaomi",
+      "name": "小米 12S / 12S Ultra",
+      "platform": "sd8g1",
+      "alias": [
+        "Xiaomi 12S",
+        "Mi 12S",
+        "thor",
+        "unicorn"
+      ],
+      "confidence": "high",
+      "note": "骁龙 8+ Gen 1（台积电）"
+    },
+    {
+      "id": "magic3",
+      "brand": "honor",
+      "name": "荣耀 Magic3 / Magic4",
+      "platform": "sd888",
+      "alias": [
+        "Honor Magic3",
+        "Magic4",
+        "ELZ-AN00"
+      ],
+      "confidence": "medium",
+      "note": "Magic3 为 888，Magic4 为 8 Gen 1"
+    },
+    {
+      "id": "honor30",
+      "brand": "honor",
+      "name": "荣耀 30 Pro+ / V40",
+      "platform": "sd865",
+      "alias": [
+        "Honor 30 Pro+",
+        "Honor V40"
+      ],
+      "confidence": "low",
+      "note": "存量机型，节点可用性以探测为准"
+    },
+    {
+      "id": "s20",
+      "brand": "samsung",
+      "name": "三星 Galaxy S20 / S20+ / S20 Ultra（骁龙版）",
+      "platform": "sd865",
+      "alias": [
+        "Galaxy S20",
+        "SM-G9810",
+        "SM-G9860"
+      ],
+      "confidence": "medium",
+      "note": "仅国行/美版为骁龙，其余为 Exynos"
+    },
+    {
+      "id": "s21",
+      "brand": "samsung",
+      "name": "三星 Galaxy S21 系列（骁龙版）",
+      "platform": "sd888",
+      "alias": [
+        "Galaxy S21",
+        "SM-G9910",
+        "SM-G9960"
+      ],
+      "confidence": "medium",
+      "note": "国行/美版为骁龙 888"
+    },
+    {
+      "id": "redmik50",
+      "brand": "xiaomi",
+      "name": "Redmi K50 / K50 电竞版",
+      "platform": "d8000",
+      "alias": [
+        "Redmi K50",
+        "K50",
+        "rubens",
+        "ingres"
+      ],
+      "confidence": "medium",
+      "note": "K50 为天玑 8100；K50 电竞版为骁龙 8 Gen1"
+    },
+    {
+      "id": "k40game",
+      "brand": "xiaomi",
+      "name": "Redmi K40 游戏增强版",
+      "platform": "d1200",
+      "alias": [
+        "Redmi K40 游戏增强版",
+        "K40 游戏增强版",
+        "aries"
+      ],
+      "confidence": "medium",
+      "note": "天玑 1200"
+    },
+    {
+      "id": "honor60",
+      "brand": "honor",
+      "name": "荣耀 60 / 70",
+      "platform": "sd778",
+      "alias": [
+        "Honor 60",
+        "Honor 70"
+      ],
+      "confidence": "low",
+      "note": "骁龙 778G 系"
+    },
+    {
+      "id": "nova9",
+      "brand": "honor",
+      "name": "华为 nova 9 / 荣耀 50",
+      "platform": "sd778",
+      "alias": [
+        "Huawei nova 9",
+        "Honor 50",
+        "NTH-AN00"
+      ],
+      "confidence": "low",
+      "note": "骁龙 778G"
+    }
+  ]
+}

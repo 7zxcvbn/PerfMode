@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">性能模式强制器</string>
+    <string name="tile_label">性能模式</string>
+    <string name="channel_name">性能模式会话</string>
+    <string name="channel_desc">显示当前性能模式状态、温度与恢复入口</string>
+    <string name="action_restore">立即恢复默认</string>
+    <string name="action_open">打开应用</string>
+</resources>
